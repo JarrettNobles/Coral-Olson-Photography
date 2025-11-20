@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { ImageProtection } from "@/components/image-protection"
 import Image from "next/image"
 
-export default function AboutClientPage() {
+function AboutClientPage() {
   return (
     <>
       <main className="flex-shrink-0" role="main" id="main-content">
@@ -53,3 +53,6 @@ export default function AboutClientPage() {
     </>
   )
 }
+
+export { AboutClientPage }
+export default AboutClientPage
