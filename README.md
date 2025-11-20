@@ -9,7 +9,7 @@ A clean, modern portfolio website showcasing Coral Olson’s photography, built 
 
 ## 🧱 Site Structure
 
-```
+\`\`\`
 /
 ├── index.html              ← Home / hero landing page
 ├── projects.html           ← Portfolio overview (grid or vertical layout)
@@ -22,7 +22,7 @@ A clean, modern portfolio website showcasing Coral Olson’s photography, built 
 │   └── styles.css          ← Shared global styles and Bootstrap overrides
 └── js/
     └── scripts.js          ← Shared JavaScript (carousel autoplay, page enhancements)
-```
+\`\`\`
 
 ---
 
@@ -45,7 +45,7 @@ Ensure that all pages use the same navbar font (`Playfair Display`) and link sty
 
 ### 2. Disable Cut/Copy/Paste for Images  
 To restrict users from downloading or copying images, include the following snippet at the end of every page (before closing `</body>`):
-```html
+\`\`\`html
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('cut', e => e.preventDefault());
@@ -57,7 +57,7 @@ To restrict users from downloading or copying images, include the following snip
     });
   });
 </script>
-```
+\`\`\`
 
 ### 3. Mobile Optimization
 - Use CSS media queries to adjust font sizes, padding, and image widths.
@@ -95,4 +95,3 @@ Sites appear on `GitHub Pages` (e.g., `JarrettNobles.github.io`) or custom domai
 - Use semantic HTML like `<h1 class="page-heading">` to maintain structure.
 - Leverage shared styles in `styles.css` and minimize inline overrides.
 - Use common footer/Instagram section as a reusable `<footer>` template—or better still, switch to a templating engine if maintaining many pages.
-
