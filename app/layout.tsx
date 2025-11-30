@@ -30,7 +30,7 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export const viewport = {
@@ -47,7 +47,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${plusJakartaSans.variable} ${playfairDisplay.variable}`}>
-      <body className="d-flex flex-column h-100">{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
