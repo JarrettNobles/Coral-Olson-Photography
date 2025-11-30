@@ -7,10 +7,14 @@ export function Footer() {
     <>
       <style jsx>{`
         .instagram-footer {
-          background-color: #1a1a1a;
+          background-color: #2d2d2d;
           padding: 4rem 2rem;
           text-align: center;
           position: relative;
+          transition: background-color 0.3s ease;
+        }
+        .instagram-footer:hover {
+          background-color: #1a1a1a;
         }
         .instagram-footer .overlay-link {
           text-decoration: none;
@@ -22,6 +26,11 @@ export function Footer() {
           flex-direction: column;
           align-items: center;
           gap: 1rem;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+        .instagram-footer:hover .overlay-content {
+          opacity: 1;
         }
         .instagram-footer .bi-instagram {
           font-size: 3rem;
