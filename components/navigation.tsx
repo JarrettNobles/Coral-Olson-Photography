@@ -54,7 +54,7 @@ export function Navigation() {
           >
             <span className="navbar-toggler-icon" aria-hidden="true"></span>
           </button>
-          <div className={`navbar-collapse ${isOpen ? "show" : "collapse"}`} id="navbarNav">
+          <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               {navItems.map((item) => (
                 <li key={item.href} className="nav-item">
